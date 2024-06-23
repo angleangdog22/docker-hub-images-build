@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Check network connectivity
+        run: ping -c 5 192.168.120.113
+        
       - name: Checkout repository
         uses: actions/checkout@v2
 
