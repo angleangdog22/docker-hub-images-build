@@ -26,7 +26,7 @@ jobs:
 
       - name: Login to Harbor
         run: |
-          echo ${{ secrets.HARBOR_PASSWORD }} | docker login registry.cn-heyuan.aliyuncs.com --username ${{ secrets.HARBOR_USERNAME }} --password-stdin
+          echo ${{ secrets.ALIYUN_PASSWORD }} | docker login registry.cn-heyuan.aliyuncs.com --username ${{ secrets.ALIYUN_USERNAME }} --password-stdin
 
       - name: Push Docker image to Harbor
         run: |
