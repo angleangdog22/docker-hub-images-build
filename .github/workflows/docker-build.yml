@@ -36,4 +36,4 @@ jobs:
 
       - name: Push Docker image to Harbor
         run: |
-          docker push 192.168.120.113/my-nginx:latest
+          docker push 192.168.120.113/library/my-nginx:latest
