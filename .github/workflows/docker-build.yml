@@ -22,7 +22,7 @@ jobs:
 
       - name: Tag Docker image for Harbor
         run: |
-          docker tag registry.cn-heyuan.aliyuncs.com/dockrhub_image/demo_image/my-nginx:latest registry.cn-heyuan.aliyuncs.com/dockrhub_image/demo_image/my-nginx:latest
+          docker tag registry.cn-heyuan.aliyuncs.com/dockrhub_image/demo_image/my-nginx:latest registry.cn-heyuan.aliyuncs.com/dockrhub_image/demo_image:0.1
 
       - name: Login to Harbor
         run: |
@@ -30,4 +30,4 @@ jobs:
 
       - name: Push Docker image to Harbor
         run: |
-          docker push registry.cn-heyuan.aliyuncs.com/dockrhub_image/demo_image/my-nginx:latest
+          docker push registry.cn-heyuan.aliyuncs.com/dockrhub_image/demo_image:0.1
